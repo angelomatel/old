@@ -76,16 +76,17 @@ document.getElementById('calcButton').onclick = calculateArea;
 function calculateArea() {
 
 const gamename6 = /[A-z0-9]{6,}/gm; //gamename
-const gamename14 = /[A-z]{1,4}/m; //gamename
+const gamename14 = /\b[A-z]{1,6}\b/m; //gamename
 const blanklines = /^\s*[\r\n]/gm; //blank space regex
 const gamecode = /^.*(([\w\d]{5}-?){3}).*$/gmi; //game code regex
 
 const replacement = '\$1';
 const str = document.getElementById('steamkey').value;
 
-const quote = str.replace("'", ''); //remove quotation marks
-const colons = quote.replace(":", ''); //remove colons
-const space1 = colons.replace(/ /gm, ''); //remove spaces [first]
+const apostrophe = str.replace("'", ''); //remove apostrophes
+const colons = apostrophe.replace(":", ''); //remove colons
+const exc = colons.replace("!", ''); //remove exclamation points
+const space1 = exc.replace(/ /gm, ''); //remove spaces [first]
 const name14 = space1.replace(gamename14, ''); //remove games with 1 to four letters in their names
 const name6 = name14.replace(gamename6, ''); //remove games with 6 or more letters in their names
 const space2 = name6.replace(/ /gm, ''); //remove spaces
