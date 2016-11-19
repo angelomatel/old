@@ -84,14 +84,16 @@ const replacement = '\$1';
 const str = document.getElementById('steamkey').value;
 
 // The substituted value will be contained in the result variable
-const colons = str.replace(":", ''); //remove colons MUST BE FIRST!
+const quote = str.replace("'", ''); //remove quotation marks
+const colons = quote.replace(":", ''); //remove colons
 const space1 = colons.replace(/ /gm, ''); //remove spaces [first]
 console.log(space1);
 const name14 = space1.replace(gamename14, ''); //remove games with 1 to four letters in their names
 const name6 = name14.replace(gamename6, ''); //remove games with 6 or more letters in their names
 const space2 = name6.replace(/ /gm, ''); //remove spaces
 const name142 = space2.replace(gamename14, ''); //remove last 1 to four letters in their names
-const last = name142.replace(blanklines, ''); //remove blank lines
+const groupees = name142.replace(/[:Used]/gm, ''); //removes ":Used" line - groupees compatibility
+const last = groupees.replace(blanklines, ''); //removes ALL blanklines
 const result = last.replace(gamecode, replacement); //remove everything but game code
 
 console.log('STEAM GAME CODES:');
