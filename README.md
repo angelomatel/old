@@ -8,5 +8,6 @@
 ##### 0.2 - Improved Code
 ##### 0.3 - Added IndieGala support
 ##### 0.3.1 - Fixed Bug
+##### 0.4 - Added groupees support [alpha] [still buggy]
 
 ###### absolutezero01.github.io
