@@ -83,11 +83,9 @@ const gamecode = /^.*(([\w\d]{5}-?){3}).*$/gmi; //game code regex
 const replacement = '\$1';
 const str = document.getElementById('steamkey').value;
 
-// The substituted value will be contained in the result variable
 const quote = str.replace("'", ''); //remove quotation marks
 const colons = quote.replace(":", ''); //remove colons
 const space1 = colons.replace(/ /gm, ''); //remove spaces [first]
-console.log(space1);
 const name14 = space1.replace(gamename14, ''); //remove games with 1 to four letters in their names
 const name6 = name14.replace(gamename6, ''); //remove games with 6 or more letters in their names
 const space2 = name6.replace(/ /gm, ''); //remove spaces
