@@ -10,5 +10,7 @@
 ##### 0.3.1 - Fixed Bug
 ##### 0.4 - Added groupees support [alpha] [still buggy]
 ##### 0.4.1 - Removed Debug Tools
+##### 0.4.2 - Updated groupees support
+#####         Allows removal of exclamation marks and better regex
 
 ###### absolutezero01.github.io
