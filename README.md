@@ -9,5 +9,6 @@
 ##### 0.3 - Added IndieGala support
 ##### 0.3.1 - Fixed Bug
 ##### 0.4 - Added groupees support [alpha] [still buggy]
+##### 0.4.1 - Removed Debug Tools
 
 ###### absolutezero01.github.io
