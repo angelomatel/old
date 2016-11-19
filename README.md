@@ -7,5 +7,6 @@
 ##### 0.1.1 - Changed http to https
 ##### 0.2 - Improved Code
 ##### 0.3 - Added IndieGala support
+##### 0.3.1 - Fixed Bug
 
 ###### absolutezero01.github.io
