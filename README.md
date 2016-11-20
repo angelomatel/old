@@ -13,5 +13,6 @@
 ##### 0.4.2 - Updated groupees support
 #####         Allows removal of exclamation marks and better regex
 ##### 0.5 - Added fadein on load, because why not
+##### 0.6 - Added copy to clipboard button, made stuff smaller
 
 ###### absolutezero01.github.io

@@ -42,7 +42,7 @@ body {
 }
 
 textarea {
-    width: 100%;
+    width: 85%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -81,13 +81,17 @@ span {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 10px 64px;
+    padding: 7px 45px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.gray {
+	color: #d3d3d3;
 }
 
 img {
@@ -100,9 +104,8 @@ img {
 <h1>Steam Keys Retriever</h1>
 <h2>How to use</h2>
 <h3>1. Copy multiple lines of steam keys from your website (i.e DailyIndieGame)<br></br>2. Paste them to the text area labled as input<br></br>3.Click on the "Retrieve Keys" button and get your steam keys!</h3>
-<label for="">Input: </label>
+<label class="gray">Input:</label><br></br>
 	<textarea name="steamkey" id="steamkey" value="2"/></textarea><br/>
-	<br></br>
 <input type="button" id="calcButton" class="button" value="Retrieve Keys" />
 
 <script>
@@ -110,8 +113,8 @@ document.getElementById('calcButton').onclick = calculateArea;
 
 function calculateArea() {
 
-const gamename6 = /[A-z0-9]{6,}/gm; //gamename
-const gamename14 = /\b[A-z]{1,4}\b/m; //gamename
+const gamename6 = /[A-z0-9]{6,}/gmi; //gamename
+const gamename14 = /\b[A-z]{1,4}\b/mi; //gamename
 const blanklines = /^\s*[\r\n]/gm; //blank space regex
 const gamecode = /^.*(([\w\d]{5}-?){3}).*$/gmi; //game code regex
 
@@ -137,9 +140,32 @@ document.getElementById('output').value = result;
 
 }
 </script>
-<br></br><br></br>
-<label for="output">Your Keys: </label>
+<br></br>
+<label for="output" class="gray">Your Keys:</label><br></br>
     <textarea name="output" id="output"></textarea>
+</center>
+<center>
+<button id="copyBlock" class="button">Click to copy</button><br><span id="copyAnswer"></span>
+<script>
+var textarea = document.getElementById('output');
+var answer = document.getElementById("copyAnswer");
+var copy   = document.getElementById("copyBlock");
+copy.addEventListener('click', function(e) {
+
+   textarea.select(); 
+   try {
+       var successful = document.execCommand('copy');
+
+       if(successful) answer.innerHTML = 'The steam game codes are copied to your clipboard!';
+       else answer.innerHTML = 'An error has occured! Try again';
+   } catch (err) {
+       answer.innerHTML = 'Your browser is not supported! :/';
+   }
+         setTimeout(function(){
+         document.getElementById("copyAnswer").innerHTML="";
+         },2250);   
+});
+</script>
 </center>
 <bottom>
 <span>Made by Absolutezero01</span>
