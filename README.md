@@ -12,5 +12,6 @@
 ##### 0.4.1 - Removed Debug Tools
 ##### 0.4.2 - Updated groupees support
 #####         Allows removal of exclamation marks and better regex
+##### 0.5 - Added fadein on load, because why not
 
 ###### absolutezero01.github.io
