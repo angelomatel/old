@@ -1,19 +1,18 @@
 <style>
 body{
-	background-color: #f2f2f2
+	background-color: #628186;
 }
 input[type=text], select {
-    width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
+    border: 4px solid #36484a;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    resize: none;
+	background-color: #b5c7c9;
 	}
 
 button[name="button"]{
-    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -35,16 +34,19 @@ p  {
 <div>
 <center>
 <h3>Payout:
-<input type="text" id="pyout" name="Members"><br>Members:</h3>
-<input type="text" id="members" name="Payout">
+<br><input type="text" id="pyout" name="Payout" value="12000000"><br>Total Members:
+<br><input type="text" id="members" name="Members" value="11"><br>Winners:
+<br><input type="text" id="win" name="Winners" value="1">
 <p id="pay"></p>
 <button name="button" onclick="myFunction()">Heist Calculate</button></div>
 <script>
   function myFunction() {
     var a = document.getElementById("members").value;
     var b = document.getElementById("pyout").value;
+	var e = document.getElementById("win").value;
 	var c = +b * +0.75;
-    var x = +c / +a;
+	var d = +a - +e;
+    var x = +c / +d;
     document.getElementById("pay").innerHTML = x;
   }
 </script>
