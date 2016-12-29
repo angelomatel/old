@@ -46,7 +46,8 @@ p  {
 	var e = document.getElementById("win").value;
 	var c = +b * +0.75;
 	var d = +a - +e;
+	var f = +b * +0.25;
     var x = +c / +d;
-    document.getElementById("pay").innerHTML = x;
+    document.getElementById("pay").innerHTML = x + ' will be split into ' + d + ' members and the ' + e + ' winner(s) keeps ' + f + ' each';
   }
 </script>
