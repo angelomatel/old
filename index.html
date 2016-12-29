@@ -30,6 +30,7 @@ h3 {
 p  {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
+	color: #ECECEC;
 	}
 
 </style>
@@ -46,6 +47,7 @@ p  {
 <br><input type="text" id="win" name="Winners" value="1"><br>
 <button name="button" onclick="calc()">Heist Calculate</button>
 <p id="result"></p>
+<p id="winner"></p>
 </div>
 <script>
   function calc() {
@@ -56,6 +58,7 @@ p  {
 	var e = +b * +0.75;
 	var f = +b * +0.25;
     var x = +e / +d;
+	var y = +x / +d;
 	var nan1 = isNaN(a);
 	var nan2 = isNaN(b);
 	var nan3 = isNaN(c);
@@ -64,6 +67,7 @@ p  {
 	}
 	else{
     document.getElementById("result").innerHTML = Math.round(x) + ' will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each';
+	document.getElementById("winner").innerHTML = 'Are you the winner? This is your command!' + '<br>!pay @mention ' + Math.round(y) + '<br>You need to do this ' + d + ' times!';
 	}
   }
 </script>
