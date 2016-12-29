@@ -46,7 +46,6 @@ p  {
 <br><input type="text" id="win" name="Winners" value="1"><br>
 <button name="button" onclick="calc()">Heist Calculate</button>
 <p id="result"></p>
-<p id="winner"></p>
 </div>
 <script>
   function calc() {
@@ -63,11 +62,9 @@ p  {
 	var nan3 = isNaN(c);
 	if(nan1 || nan2 || nan3 == true){
 	document.getElementById("result").innerHTML = 'An error has occured! Please put numbers in the text area!';
-	document.getElementById("winner").innerHTML = ' ';
 	}
 	else{
     document.getElementById("result").innerHTML = Math.round(x) + ' will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each';
-	document.getElementById("winner").innerHTML = 'Are you the winner? This is your command!' + '<br>!pay @mention ' + Math.round(y) + '<br>You need to do this ' + d + ' times!';
 	}
   }
 </script>
