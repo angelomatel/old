@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <style>
 body{
 	background-color: #628186;
@@ -24,26 +25,30 @@ button[name="button"]{
 
 h3 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
+	font-size: 13px;
 	}
 p  {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	}
+
 </style>
 <head>
 <title>CR Server Heist - Calculator</title>
 <link rel="icon" type="image/png" href="favicon/favicon.png">
+</head>
 <div>
 <center>
+<img src="images/crlogo.png">
 <h3>Payout:
 <br><input type="text" id="pyout" name="Payout" value="12000000"><br>Total Members:
 <br><input type="text" id="members" name="Members" value="11"><br>Winners:
-<br><input type="text" id="win" name="Winners" value="1">
-<p id="pay"></p>
-<button name="button" onclick="myFunction()">Heist Calculate</button></div>
+<br><input type="text" id="win" name="Winners" value="1"><br>
+<button name="button" onclick="calc()">Heist Calculate</button>
+<p id="result"></p>
+</div>
 <script>
-  function myFunction() {
+  function calc() {
     var a = document.getElementById("members").value;
     var b = document.getElementById("pyout").value;
 	var c = document.getElementById("win").value;
@@ -51,6 +56,14 @@ p  {
 	var e = +b * +0.75;
 	var f = +b * +0.25;
     var x = +e / +d;
-    document.getElementById("pay").innerHTML = Math.round(x) + ' will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each';
+	var nan1 = isNaN(a);
+	var nan2 = isNaN(b);
+	var nan3 = isNaN(c);
+	if(nan1 || nan2 || nan3 == true){
+	document.getElementById("result").innerHTML = 'An error has occured! Please put numbers in the text area!';
+	}
+	else{
+    document.getElementById("result").innerHTML = Math.round(x) + ' will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each';
+	}
   }
 </script>
