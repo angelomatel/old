@@ -64,6 +64,7 @@ p  {
 	var nan3 = isNaN(c);
 	if(nan1 || nan2 || nan3 == true){
 	document.getElementById("result").innerHTML = 'An error has occured! Please put numbers in the text area!';
+	document.getElementById("winner").innerHTML = ' ';
 	}
 	else{
     document.getElementById("result").innerHTML = Math.round(x) + ' will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each';
