@@ -43,11 +43,11 @@ p  {
   function myFunction() {
     var a = document.getElementById("members").value;
     var b = document.getElementById("pyout").value;
-	var e = document.getElementById("win").value;
-	var c = +b * +0.75;
-	var d = +a - +e;
+	var c = document.getElementById("win").value;
+	var d = +a - +c;
+	var e = +b * +0.75;
 	var f = +b * +0.25;
-    var x = +c / +d;
-    document.getElementById("pay").innerHTML = x + ' will be split into ' + d + ' members and the ' + e + ' winner(s) keeps ' + f + ' each';
+    var x = +e / +d;
+    document.getElementById("pay").innerHTML = Math.round(x) + ' will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each';
   }
 </script>
