@@ -70,8 +70,8 @@ h2  {
 	document.getElementById("winner").innerHTML = ' '
 	}
 	else{
-    document.getElementById("result").innerHTML = x + ' (a total of ' + e +') will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each<br><br>' + '(' + b + ' * 0.75) / (' + a + ' - ' + c + ')';
-	document.getElementById("winner").innerHTML = 'Are you the winner? Your command should be : !pay [Insert Username Here] ' + x;
+    document.getElementById("result").innerHTML = x.toFixed(2) + ' (a total of ' + e.toFixed(2) +') will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f.toFixed(2) + ' each<br><br>' + '(' + b + ' * 0.75) / (' + a + ' - ' + c + ')';
+	document.getElementById("winner").innerHTML = 'Are you the winner? You need to give ' + e.toFixed(2) + ' to the Managers/KEKs<br>Are you a KEK/Manager? You need to pay ' + x.toFixed(2) + ' to each member ' + d + ' times!';
 	}
   }
 </script>
