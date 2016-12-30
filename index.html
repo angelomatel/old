@@ -31,6 +31,10 @@ p  {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	}
+h2  {
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;	
+	}
 
 </style>
 <head>
@@ -46,6 +50,7 @@ p  {
 <br><input type="text" id="win" name="Winners" value="1"><br>
 <button name="button" onclick="calc()">Heist Calculate</button>
 <p id="result"></p>
+<h2 id="winner"></h2>
 </div>
 <script>
   function calc() {
@@ -62,9 +67,11 @@ p  {
 	var nan3 = isNaN(c);
 	if(nan1 || nan2 || nan3 == true){
 	document.getElementById("result").innerHTML = 'An error has occured! Please put numbers in the text area!';
+	document.getElementById("winner").innerHTML = ' '
 	}
 	else{
     document.getElementById("result").innerHTML = x + ' (a total of ' + e +') will be given to ' + d + ' members and the ' + c + ' winner(s) keeps ' + f + ' each<br><br>' + '(' + b + ' * 0.75) / (' + a + ' - ' + c + ')';
+	document.getElementById("winner").innerHTML = 'Are you the winner? Your command should be : !pay [Insert Username Here] ' + x;
 	}
   }
 </script>
