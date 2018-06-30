@@ -65,15 +65,16 @@ textarea {
 	font-size: 12px;
 }
 
-button {
+.button {
     background-color: #4CAF50;
-    border: 2px solid #2C6D2E;
+    border: none;
     color: white;
     padding: 7px 45px;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
-    margin: 0 2px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
 }
 
