@@ -1,0 +1,73 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #628186;
+	font-family: 'Roboto', sans-serif; /* Font na gagamitin sa buong page */
+	-webkit-animation: startFade 1.3s; /* Saglit na animation pagload ng page */
+	text-align: center;
+}
+
+.header {
+	background: #4B6C71;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.header a {
+	color: white;
+	float: left;
+	font-size: 16px;
+	padding: 14px 12px;
+}
+
+.header a.link {
+	line-height: 1.8;
+}
+
+.header a.link:hover {
+	background-color: #04ABBB;
+}
+
+.header .title {
+	font-weight: bold;
+	font-size : 24px;
+	color: black;
+}
+
+.main-body {
+	padding-top: 3%;
+}
+
+p.bigtext-warning {
+	font-size: 38px;
+	color: #A50000;
+	font-weight: bolder;
+}
+
+span {
+	color: white;
+	font-size: 12;
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.credits-right {
+	right: 0;
+}
+
+.credits-left {
+	left: 0;
+}
+
+@keyframes startFade {
+	from {opacity: 0;} to {opacity: 1;}
+}
