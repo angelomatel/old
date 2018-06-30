@@ -2,12 +2,18 @@ document.getElementById('getKeysButton').onclick = getKeys;
 
 function getKeys() {
 
-const gamecode = /^.*([\w\d]{5})-([\w\d]{5})-([\w\d]{5}).*$/gm; //game code regex
+var gamecode = /^.*([\w\d]{5})-([\w\d]{5})-([\w\d]{5}).*$/gm; //game keys regex
 
-const replacement = '$1-$2-$3';
-const str = document.getElementById('steamkey').value;
+var replacement = '$1-$2-$3';
+var str = document.getElementById('steamkey').value.split('\n');
 
-const result = str.replace(gamecode, replacement); //remove everything but game code
+var i = 0;
+var result = "";
+for (;i < str.length; i++) {
+	if (gamecode.test(str[i]) == true) {
+		result += str[i].replace(gamecode, replacement) + "\n";
+	}
+} //remove everything but game keys
 
 console.log('STEAM GAME CODES:');
 console.log(result);
