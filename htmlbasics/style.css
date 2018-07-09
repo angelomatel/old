@@ -1,0 +1,26 @@
+body {
+	font-family: Roboto, sans-serif;
+}
+
+p.code {
+	font-family: Consolas, sans-serif;
+}
+
+div.code {
+	margin: 5px 40%;
+	border: 1px solid;
+	text-align: center;
+}
+
+div.sample {
+	padding: 3px;
+	margin: 5px 25%;
+	border: 2px solid gray;
+}
+
+div.note {
+	text-align: center;
+	font-style: italic;
+	font-size: 12px;
+	color: red;
+}
