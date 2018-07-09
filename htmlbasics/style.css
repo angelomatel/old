@@ -8,8 +8,10 @@ p.code {
 
 div.code {
 	margin: 5px 40%;
-	border: 1px solid;
+	border: 1px solid black;
 	text-align: center;
+	color: #00FF00;
+	background-color: black;
 }
 
 div.sample {
