@@ -5,7 +5,7 @@ document.getElementById('getIntegerToBinary').onclick = getIntegerToBinary;
 //
 
 function getBinaryToInteger() {
-    var binary =  document.getElementById('b2i').value.split('\n');
+    var binary =  document.getElementById('b2i').value.split(/[\s]/gm);
     var i,result
     for (i = 0,result = "";i < binary.length; i++) {
         result += parseInt(binary[i], 2) + "\n";
@@ -15,7 +15,7 @@ function getBinaryToInteger() {
 }
 
 function getIntegerToBinary() {
-    var integer =  document.getElementById('i2b').value.split('\n');
+    var integer =  document.getElementById('i2b').value.split(/[\s]/gm);
     for (i = 0,result = "";i < integer.length; i++) {
         result += parseFloat(integer[i]).toString(2) + "\n";
     }
@@ -24,7 +24,7 @@ function getIntegerToBinary() {
 }
 
 function getAlphabetToBinary() {
-    var alphabet = document.getElementById('a2b').value.split('\n');
+    var alphabet = document.getElementById('a2b').value.split(/[\s]/gm);
     for (i = 0,result = "";i < alphabet.length; i++) {
         result += alphabet[i].charCodeAt(0).toString(2) + " ";
     }
