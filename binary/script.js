@@ -1,6 +1,7 @@
 document.getElementById('getBinaryToInteger').onclick = getBinaryToInteger;
 document.getElementById('getIntegerToBinary').onclick = getIntegerToBinary;
-// document.getElementById('getAlphabetToBinary').onclick = getAlphabetToBinary;
+document.getElementById('getBinaryToAlphabet').onclick = getBinaryToAlphabet;
+document.getElementById('getAlphabetToBinary').onclick = getAlphabetToBinary;
 
 //
 
@@ -23,58 +24,99 @@ function getIntegerToBinary() {
     console.log(result)
 }
 
-function getAlphabetToBinary() {
-    var alphabet = document.getElementById('a2b').value.split(/[\s]/gm);
+function getBinaryToAlphabet() {
+    var alphabet = document.getElementById('b2a').value.split('\n');
     for (i = 0,result = "";i < alphabet.length; i++) {
-        result += alphabet[i].charCodeAt(0).toString(2) + " ";
+        string = alphabet[i].split(" ")
+            for (n = 0, tempresult = "";n < string.length; n++) {
+                tempresult += String.fromCharCode(parseInt(string[n], 2));
+            }
+        result += tempresult.replace(/^\s+|\s+$/gm,'') + "\n";
+    }
+    document.getElementById('b2a-o').value = result;
+}
+
+function getAlphabetToBinary() {
+    var alphabet = document.getElementById('a2b').value.split('\n');
+    for (i = 0,result = "";i < alphabet.length; i++) {
+        string = alphabet[i].split("")
+            for (n = 0, tempresult = "";n < string.length; n++) {
+                tempresult += string[n].charCodeAt(0).toString(2) + " ";
+            }
+        result += tempresult.replace(/^\s+|\s+$/gm,'') + "\n";
     }
     document.getElementById('a2b-o').value = result;
-    console.log(result)
 }
 
 //
 
 function copyBinaryToInteger() {
     var textarea = document.getElementById('b2i-o');
-    var copy   = document.getElementById("copyBinarytoIntegerButton");
+    var copy = document.getElementById("copyBinarytoIntegerButton");
     copy.addEventListener('click', function(e) {
     
-       textarea.select(); 
-       try {
-           var successful = document.execCommand('copy');
-           if(successful) alert('The output has been copied to your clipboard!');
-           else alert('An error has occured! Try again');
-       } catch (err) {
-           alert('Your browser is not supported! :/');
-       }
+        textarea.select(); 
+        try {
+            var successful = document.execCommand('copy');
+            if(successful) alert('The output has been copied to your clipboard!');
+            else alert('An error has occured! Try again');
+        } catch (err) {
+            alert('Your browser is not supported! :/');
+        }
     });
 }
 
 function copyIntegerToBinary() {
     var textarea = document.getElementById('i2b-o');
-    var copy   = document.getElementById("copyIntegerToBinaryButton");
+    var copy = document.getElementById("copyIntegerToBinaryButton");
     copy.addEventListener('click', function(e) {
     
-       textarea.select(); 
-       try {
-           var successful = document.execCommand('copy');
-           if(successful) alert('The output has been copied to your clipboard!');
-           else alert('An error has occured! Try again');
-       } catch (err) {
-           alert('Your browser is not supported! :/');
-       }
+        textarea.select(); 
+        try {
+            var successful = document.execCommand('copy');
+            if(successful) alert('The output has been copied to your clipboard!');
+            else alert('An error has occured! Try again');
+        } catch (err) {
+            alert('Your browser is not supported! :/');
+        }
     });
-
 }
 
 function copyAlphabetToBinary() {
-    var text = document.getElementById('a2b-o');
-    text.select();
-    document.execCommand("copy");
+    var textarea = document.getElementById('a2b-o');
+    var copy = document.getElementById("copyAlphabetToBinaryButton");
+    copy.addEventListener('click', function(e) {
+    
+        textarea.select(); 
+        try {
+            var successful = document.execCommand('copy');
+            if(successful) alert('The output has been copied to your clipboard!');
+            else alert('An error has occured! Try again');
+        } catch (err) {
+            alert('Your browser is not supported! :/');
+        }
+    });
+}
 
+function copyBinarytoAlphabet() {
+    var textarea = document.getElementById('b2a-o');
+    var copy = document.getElementById("copyBinarytoAlphabetButton");
+    copy.addEventListener('click', function(e) {
+    
+        textarea.select(); 
+        try {
+            var successful = document.execCommand('copy');
+            if(successful) alert('The output has been copied to your clipboard!');
+            else alert('An error has occured! Try again');
+        } catch (err) {
+            alert('Your browser is not supported! :/');
+        }
+    });
 }
 
 copyBinaryToInteger();
 copyIntegerToBinary();
+copyBinarytoAlphabet();
+copyAlphabetToBinary();
 
 console.log('Script loaded')

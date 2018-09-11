@@ -13,7 +13,8 @@ body {
 	top: 0;
 	width: 100%;
 	overflow: hidden;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 10;
 }
 
 .header a {
@@ -45,6 +46,7 @@ span.top, span.bottom {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	width: 99vw;
 }
 
 span.top div, span.bottom div {
@@ -52,14 +54,15 @@ span.top div, span.bottom div {
 	flex-direction: column;
 	font-size: 28px;
 	text-align: center;
+	font-weight: bold;
 	position: relative;
+	padding: 10px 2%;
 
 }
 
 span.top div textarea.input, span.bottom div textarea {
-	width: 40vw;
+	width: 45vw;
 	height: 180px;
-	padding: 3%;
 	font-size: 14px;
 	font-family: 'Roboto', Arial, sans-serif;
 	resize: none;
