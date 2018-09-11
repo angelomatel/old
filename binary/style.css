@@ -57,7 +57,7 @@ span.top div, span.bottom div {
 }
 
 span.top div textarea.input, span.bottom div textarea {
-	width: 55em;
+	width: 40vw;
 	height: 180px;
 	padding: 3%;
 	font-size: 14px;
