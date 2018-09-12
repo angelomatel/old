@@ -3,7 +3,6 @@ body {
 	padding: 0px;
 	background-color: #628186;
 	font-family: 'Roboto', sans-serif;
-	-webkit-animation: startFade 1.3s;
 	text-align: center;
 }
 
@@ -39,6 +38,7 @@ body {
 
 .main-body {
 	padding-top: 3%;
+	-webkit-animation: startFade 1.3s;
 }
 
 p.bigtext-warning {

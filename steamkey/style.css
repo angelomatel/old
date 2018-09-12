@@ -1,6 +1,5 @@
 body {
     background-color: #628186;
-    -webkit-animation: fadein 1.3s;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	margin: 0px;
@@ -38,7 +37,8 @@ body {
 }
 
 .main-body {
-	padding-top: 1%;
+	padding-top: 3%;
+	-webkit-animation: fadein 1.3s;
 }
 
 textarea {
