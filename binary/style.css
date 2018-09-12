@@ -85,6 +85,16 @@ hr {
 	border-width: 1px;
 }
 
+div.footer-small-left {
+	text-align: left;
+	float: left;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 12px;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
