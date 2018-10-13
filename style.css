@@ -6,4 +6,5 @@ p.warning-underconstruction {
     font-size: 3em;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 2px 1px 0px lightcoral;
 }
