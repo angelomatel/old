@@ -2,12 +2,15 @@ document.getElementById('getBinaryToInteger').onclick = getBinaryToInteger;
 document.getElementById('getIntegerToBinary').onclick = getIntegerToBinary;
 document.getElementById('getBinaryToAlphabet').onclick = getBinaryToAlphabet;
 document.getElementById('getAlphabetToBinary').onclick = getAlphabetToBinary;
+document.getElementById('getHexToBinary').onclick = getHexToBinary;
+document.getElementById('getBinaryToHex').onclick = getBinaryToHex;
 
 //
 
+var i,result
+
 function getBinaryToInteger() {
     var binary =  document.getElementById('b2i').value.split(/[\s]/gm);
-    var i,result
     for (i = 0,result = "";i < binary.length; i++) {
         result += parseInt(binary[i], 2) + "\n";
     }
@@ -25,15 +28,16 @@ function getIntegerToBinary() {
 }
 
 function getBinaryToAlphabet() {
-    var alphabet = document.getElementById('b2a').value.split('\n');
-    for (i = 0,result = "";i < alphabet.length; i++) {
-        string = alphabet[i].split(" ")
+    var binary = document.getElementById('b2a').value.split('\n');
+    for (i = 0,result = "";i < binary.length; i++) {
+        string = binary[i].split(" ")
             for (n = 0, tempresult = "";n < string.length; n++) {
                 tempresult += String.fromCharCode(parseInt(string[n], 2));
             }
         result += tempresult.replace(/^\s+|\s+$/gm,'') + "\n";
     }
     document.getElementById('b2a-o').value = result;
+    console.log(result)
 }
 
 function getAlphabetToBinary() {
@@ -46,6 +50,33 @@ function getAlphabetToBinary() {
         result += tempresult.replace(/^\s+|\s+$/gm,'') + "\n";
     }
     document.getElementById('a2b-o').value = result;
+    console.log(result)
+}
+
+function getHexToBinary() {
+    var hex = document.getElementById('h2b').value.split('\n');
+    for (i = 0,result = "";i < hex.length; i++) {
+        string = hex[i].split("")
+            for (n = 0, tempresult = "";n < string.length; n++) {
+                tempresult += parseInt(string[n], 16).toString(2) + " ";
+            }
+        result += tempresult.replace(/^\s+|\s+$/gm,'') + "\n";
+    }
+    document.getElementById('h2b-o').value = result;
+    console.log(result)
+}
+
+function getBinaryToHex() {
+    var binary = document.getElementById('b2h').value.split('\n');
+    for (i = 0,result = "";i < binary.length; i++) {
+        string = binary[i].split(" ")
+            for (n = 0, tempresult = "";n < string.length; n++) {
+                tempresult += parseInt(string[n], 2).toString(16).toUpperCase();
+            }
+        result += tempresult.replace(/^\s+|\s+$/gm,'') + "\n";
+    }
+    document.getElementById('b2h-o').value = result;
+    console.log(result)
 }
 
 //

@@ -9,8 +9,9 @@ body {
 .header {
 	background: #4B6C71;
 	position: fixed;
-	top: 0;
-	width: 100%;
+	float: left;
+	height: 100%;
+	width: 10%;
 	overflow: hidden;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }

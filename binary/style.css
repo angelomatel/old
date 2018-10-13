@@ -1,7 +1,8 @@
 body {
-    background-color: #628186;
+	background-color: #628186;
+	background: url(green-cup.png);
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
@@ -61,7 +62,7 @@ span.top div, span.bottom div {
 }
 
 span.top div textarea.input, span.bottom div textarea {
-	width: 45vw;
+	width: 30vw;
 	height: 180px;
 	font-size: 14px;
 	font-family: 'Roboto', Arial, sans-serif;
