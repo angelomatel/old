@@ -49,9 +49,9 @@ div.navigator span.links a {
     padding-right: 20px;
 }
 
-div.navigator span.links a:link { color: #e6e6fa; }
-div.navigator span.links a:visited { color: #e6e6fa; }
-div.navigator span.links a:hover { animation: nav-link-hover 7s linear 0s infinite alternate-reverse; }
+a:link { color: #e6e6fa; }
+a:visited { color: #e6e6fa; }
+a:hover { animation: nav-link-hover 7s linear 0s infinite alternate-reverse; }
 
 div.body {
     margin: 1vh 8vw;
