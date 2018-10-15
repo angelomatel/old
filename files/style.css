@@ -1,13 +1,17 @@
 body {
     background: #628186;
     margin: 0px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: 17px;
+    text-shadow:     1px 0px 0px black;
 }
 
 p.warning-underconstruction {
     font-size: 3em;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    text-shadow: 2px 1px 0px lightcoral;
+    text-shadow: 3px 0px 1px black, 4px 1px 2px red;
 }
 
 div.navigator {
@@ -21,4 +25,9 @@ div.navigator {
 div.navigator div.header-image img {
     height: 120px;
     margin: -2vh 5px -5vh;
+}
+
+div.body {
+    margin: 1vh 8vw;
+    padding: 0px 10px;
 }
