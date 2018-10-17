@@ -49,12 +49,18 @@ div.navigator span.links a {
     font-size: 34px;
     text-decoration: none;
     height: 45;
-    padding-right: 20px;
+    padding: -90px 10px 0px;
+    margin-right: 80px;
 }
 
 a:link { color: #e6e6fa; }
 a:visited { color: #e6e6fa; }
-a:hover { animation: nav-link-hover 7s linear 0s infinite alternate-reverse; }
+a:hover { animation: nav-link-hover 4s linear 0s infinite alternate-reverse; }
+
+img.icon {
+    width: 32;
+    height: inherit;
+}
 
 div.body {
     margin: 1vh 8vw;
@@ -64,6 +70,10 @@ div.body {
 div.body div.body-image-logo img {
     height: 240;
     margin-bottom: 20px;
+}
+
+div.contact p {
+    font-weight: 300;
 }
 
 @keyframes nav-link-hover {
