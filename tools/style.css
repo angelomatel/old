@@ -1,0 +1,27 @@
+.tools-selection {
+    display: flex;
+    text-align: center;
+}
+
+.tools-selection-box {
+    width: 80%;
+    padding: 10px 15px;
+    margin: 0 30;
+    border: 1px dotted black;
+}
+
+.tool-link {
+    width: 470;
+    background-color: #4caf50;
+    padding: 7px 45px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+button#disabled:after, {
+    background: red;
+    content: 'NOT YET AVAILABLE';
+}

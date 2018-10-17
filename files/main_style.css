@@ -1,18 +1,32 @@
+/*
+This CSS was made by hand. Holy shit, right?
+
+Well anyways, I'm using this for a school project,
+in which they haven't even taught us CSS yet, good
+thing for backup knowledge, right? lol no but anyways
+stop reading my source code. It's only there for formality.
+But sadly I won't be able to stop you because this is only
+a block of text, not a human being.
+*/
+
 body {
     background: #628186;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     color: whitesmoke;
     font-size: 17px;
-    text-shadow: 1px 0px 0px black;
+    text-shadow: 1px 0 0 black;
 }
 
 p.warning-underconstruction {
     font-size: 51px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    text-shadow: 3px 0px 1px black, 4px 1px 2px red;
+    text-shadow: 3px 0 1px black, 4px 1px 2px red;
 }
+
+/*DIVIDER-NAVIGATION_BAR*/
 
 div.navigator {
     position: fixed;
@@ -22,54 +36,61 @@ div.navigator {
     width: 100%;
     height: 45;
     padding-bottom: 19;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 6px 20 0 rgba(0, 0, 0, 0.19);
     z-index: 10;
 }
 
-div.navigator div.header-image img {
+div.header-image img {
     height: 120;
 }
 
-div.navigator div.header-image-home img {
+div.header-image-home img {
     height: 60;
     padding: 5 0 0 20;
     margin-bottom: 60;
 }
 
-div.navigator span.links {
+span.links {
     display: flex;
-    justify-content: left;
     position: relative;
-    top: -100px;
-    margin: 0px 341px -80px;
-    width: 50%
+    top: -100;
+    margin: 0 341px -80;
+    width: 50% 
 }
 
-div.navigator span.links a {
+span.links a {
     font-size: 34px;
     text-decoration: none;
     height: 45;
-    padding: -90px 10px 0px;
-    margin-right: 80px;
+    padding: -90 10 0;
+    margin-right: 80;
 }
+
+/*DIVIDER-LINK_STYLING*/
 
 a:link { color: #e6e6fa; }
 a:visited { color: #e6e6fa; }
 a:hover { animation: nav-link-hover 4s linear 0s infinite alternate-reverse; }
 
-img.icon {
-    width: 32;
-    height: inherit;
+span.links p.onpage-link {
+    font-size: 34px;
+    text-decoration: none;
+    padding: -90 10 0;
+    margin-right: 80;
+    margin-top: 0;
+    color: black;
 }
+
+.h1 { font-size: 2em; margin: 0; }
 
 div.body {
     margin: 1vh 8vw;
-    padding: 20px 10px 0px;
+    padding: 60 10 0;
 }
 
 div.body div.body-image-logo img {
     height: 240;
-    margin-bottom: 20px;
+    margin-bottom: 20;
 }
 
 div.contact p {
