@@ -18,24 +18,57 @@ div#formulaBlock {
     border: 1px dotted black;
     width: 200px;
     height: 50px;
-    margin: 0px 30px;
+    margin: 20 0;
     padding: 3px;
 }
 
-div.definitionBlock {
-    height: 200px;
+div#wrapper {
+    padding: 50 0;
+    float: left;
+    width: auto;
+    margin-right: 80;
 }
 
-p.acronym, p.definition {
-    
+div.definitionBlock {
+    height: 500px;
+}
+
+span.definition-divider {
+    display: inline;
+    font-size: 18px;
+    padding: 0 10;
+}
+
+p.acronym {
+    display: inline;
+    font-family: 'Tinos';
+    font-style: italic;
+    font-size: 30px;
+}
+
+p.definition {
+    display: inline;
+    font-family: 'Tinos';
+    font-size: 22px;
 }
 
 p {
     font-size: 17px;
+    height: 17px;
 }
 
 select {
+    display: inline;
     appearance: none;
-    margin: 20 10;
     height: 20px;
+}
+
+input {
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+input:disabled {
+    background: salmon;
 }

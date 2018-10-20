@@ -29,20 +29,29 @@
     <p class="h1">Simple Interest Calculator</p>
 
     <div class="calculator">
-        <p id="12px">Solve for: </p><br>
+        <div id="wrapper">
+        <p style="display: inline;">Solve for: </p>
         <select id="solveSelection" onchange="solveForChange()">
                 <option>Select Below:</option>
                 <option value="i">Interest</option>
                 <option value="p">Principal</option>
                 <option value="t">Time</option>
                 <option value="r">Rate</option>
-            </select>
+        </select>
         <div id="formulaBlock"></div>
-        <div class="definitionBlock">
-            <p class="acronym">I</p><p class="definition">Interest</p><br>
-            <p class="acronym">P</p><p class="definition">Principal</p><br>
-            <p class="acronym">r</p><p class="definition">Time</p><br>
-            <p class="acronym">t</p><p class="definition">Rate</p>
+            <div class="definitionBlock">
+                <p class="definition">Definitions:</p><br>
+                <p class="acronym">I</p><span class="definition-divider">―</span><p class="definition">Interest</p><br>
+                <p class="acronym">P</p><span class="definition-divider">―</span><p class="definition">Principal</p><br>
+                <p class="acronym">r</p><span class="definition-divider">―</span><p class="definition">Time</p><br>
+                <p class="acronym">t</p><span class="definition-divider">―</span><p class="definition">Rate</p>
+            </div>
+        </div>
+        <div id="wrapper">
+            <p>Interest</p><input type="text" id="inputInterest">
+            <p>Principal</p><input type="text" id="inputPrincipal">
+            <p>Time</p><input type="text" id="inputTime">
+            <p>Rate</p><input type="text" id="inputRate">
         </div>
     </div>
 </div>
