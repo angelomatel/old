@@ -1,0 +1,41 @@
+div.calculator {
+    display: flex;
+    text-align: left;
+    border: 1px dotted black;
+    width: 100%;
+    height: 80%;
+    padding: 5px 20px;
+}
+
+div#formulaBlock {
+    font-family: 'Tinos';
+    font-style: italic;
+    text-shadow: 0 0 0;
+    background: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    color: #676767;
+    border: 1px dotted black;
+    width: 200px;
+    height: 50px;
+    margin: 0px 30px;
+    padding: 3px;
+}
+
+div.definitionBlock {
+    height: 200px;
+}
+
+p.acronym, p.definition {
+    
+}
+
+p {
+    font-size: 17px;
+}
+
+select {
+    appearance: none;
+    margin: 20 10;
+    height: 20px;
+}

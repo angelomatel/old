@@ -1,5 +1,6 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tinos:400,400i" rel="stylesheet">
     <link href="/files/main_style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="/pictures/favicon.png" rel="icon">
@@ -10,12 +11,11 @@
     <meta name="robots" content="index,nofollow,noarchive">
     
     <!-- Different tags for different parts of pages -->
-    <title>Tools - Zero's Playground</title>
+    <title>Simple Interest Calculator - Zero's Playground</title>
     <meta name="description" content="These are tools for whatever I stumble upon in my class or in some games.">
 </head>
 
 <div class="navigator">
-    <div class="header-image"><img class="header-image" src="/pictures/logo_minified.png"></div>
     <div class="header-image-home"><a href="/"><img src="/pictures/home.png" title="Click here to go back to the main page!" alt="Click here to go back to the main page!"></a></div>
 
     <span class="links">
@@ -25,14 +25,26 @@
 </div>
 
 <div class="body">
-    <div class="tools-selection">
-    <div class="tools-selection-box">
-        <p class="h1">Simple Interest Calculator</p>
+    <div style="text-align: center;"
+    <p class="h1">Simple Interest Calculator</p>
 
-        <button class="tool-link"><a href="simpleinterest/">Click here to go to the Simple Interest Calculator</a></button>
-    </div>
-    <div class="tools-selection-box">
-
-    </div>
+    <div class="calculator">
+        <p id="12px">Solve for: </p><br>
+        <select id="solveSelection" onchange="solveForChange()">
+                <option>Select Below:</option>
+                <option value="i">Interest</option>
+                <option value="p">Principal</option>
+                <option value="t">Time</option>
+                <option value="r">Rate</option>
+            </select>
+        <div id="formulaBlock"></div>
+        <div class="definitionBlock">
+            <p class="acronym">I</p><p class="definition">Interest</p><br>
+            <p class="acronym">P</p><p class="definition">Principal</p><br>
+            <p class="acronym">r</p><p class="definition">Time</p><br>
+            <p class="acronym">t</p><p class="definition">Rate</p>
+        </div>
     </div>
 </div>
+
+<script src="script.js"></script>

@@ -21,6 +21,12 @@
     color: white;
 }
 
+button a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
 button#disabled:after, {
     background: red;
     content: 'NOT YET AVAILABLE';
