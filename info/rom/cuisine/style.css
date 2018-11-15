@@ -16,3 +16,7 @@ td {
     padding: 10;
     text-align: center;
 }
+
+tr:nth-child(odd) td {
+    background: rgb(110, 99, 204);
+}
