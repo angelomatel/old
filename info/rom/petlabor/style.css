@@ -1,0 +1,44 @@
+p.h1 {
+    text-align: center;
+    font-size: 40;
+    font-weight: 350;
+}
+
+table {
+    margin: 20 0;
+    width: 100%;
+    text-align: center;
+}
+
+table.itempool {
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10;
+}
+
+table.requirements th {
+    background: rgb(78, 122, 183);
+    font-weight: 500;
+}
+
+table.requirements td {
+    background: rgb(98, 146, 210);
+    font-weight: 400;
+}
+
+table.itempool th {
+    background: rgb(76, 71, 174);
+    font-weight: 500;
+}
+
+table.itempool td.title {
+    background: rgb(76, 69, 173);
+    font-weight: 500;
+}
+
+table.itempool td {
+    background: rgb(81, 123, 181);
+    font-weight: 400;
+}

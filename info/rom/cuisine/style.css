@@ -1,0 +1,18 @@
+table {
+    margin: 20 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    background: rgb(78, 122, 183);
+    font-weight: 500;
+    padding: 10;
+}
+
+td {
+    background: rgb(98, 146, 210);
+    font-weight: 400;
+    padding: 10;
+    text-align: center;
+}

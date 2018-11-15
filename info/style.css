@@ -1,4 +1,9 @@
-.icon {
-    width: 32;
-    height: inherit;
+p.h1 {
+    font-size: 50;
+    font-weight: 350;
+}
+
+div.container {
+    width: 80%;
+    margin: 20;
 }
