@@ -5,18 +5,18 @@ table {
 }
 
 th {
-    background: rgb(78, 122, 183);
+    background: rgb(76, 69, 173);
     font-weight: 500;
     padding: 10;
 }
 
 td {
-    background: rgb(98, 146, 210);
+    background: rgb(81, 123, 181);
     font-weight: 400;
     padding: 10;
     text-align: center;
 }
 
 tr:nth-child(odd) td {
-    background: rgb(110, 99, 204);
+    background: rgb(72, 112, 167);
 }

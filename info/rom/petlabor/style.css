@@ -42,3 +42,7 @@ table.itempool td {
     background: rgb(81, 123, 181);
     font-weight: 400;
 }
+
+table.itempool tr:nth-child(odd) td {
+    background: rgb(72, 112, 167);
+}
