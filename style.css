@@ -1,0 +1,6 @@
+p.warning-underconstruction {
+    font-size: 51px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 3px 0 1px black, 4px 1px 2px red;
+}

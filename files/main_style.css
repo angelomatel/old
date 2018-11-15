@@ -10,20 +10,13 @@ a block of text, not a human being.
 */
 
 body {
-    background: #628186;
+    background: #628186 url('/pictures/bg.png');
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     color: whitesmoke;
     font-size: 17px;
     text-shadow: 1px 0 0 black;
-}
-
-p.warning-underconstruction {
-    font-size: 51px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-shadow: 3px 0 1px black, 4px 1px 2px red;
 }
 
 /*DIVIDER-NAVIGATION_BAR*/
