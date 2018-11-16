@@ -5,7 +5,7 @@
 
 .tools-selection-box {
     width: 80%;
-    padding: 10px 15px;
+    padding: 50px 15px;
     margin: 0 30;
     border: 1px dotted black;
 }
@@ -30,4 +30,8 @@ button a {
 button#disabled:after, {
     background: red;
     content: 'NOT YET AVAILABLE';
+}
+
+div.body {
+    padding-top: 10vh;
 }
